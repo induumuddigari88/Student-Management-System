@@ -1,0 +1,38 @@
+Student Management System(Explanation)
+
+
+Q) How do your three layers connect? Explain in your own words?
+
+The frontend, backend, and database work together as one system.
+The frontend sends user requests to the Flask backend using fetch().
+Flask processes the request and communicates with the MySQL database to store or retrieve data.
+The database sends the data back to Flask, and Flask returns it to the frontend to display on the webpage.
+
+Q) What was the hardest part and how did you solve it?
+
+The hardest part was connecting the frontend with the backend and making the data display correctly in the table.
+
+Initially, the CSS and JavaScript files were not loading because the file paths were incorrect, which caused errors like 404 NOT FOUND. Due to this, the table and student count were not updating.
+
+I solved this by:
+
+placing all frontend files inside the static folder
+correcting the file paths in index.html
+restarting the Flask server
+checking browser console errors using Inspect → Console
+
+Q) What would you do differently if you had more time?
+
+If I had more time, I would improve the project by adding more advanced features and better UI design.
+
+Some improvements I would add:
+
+Adding Time to the records
+Course-wise charts and dashboard analytics
+Export student data to CSV or Excel
+Login authentication for admin users
+More responsive and modern UI animations
+
+
+
+
